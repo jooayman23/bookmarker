@@ -1,0 +1,41 @@
+
+h1{
+    font-family: 'Pacifico', 'cursive';
+  }
+  h2{
+    font-family: 'Righteous', 'cursive';
+  }
+  body{
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  
+  #home {
+    min-height: 100vh;
+    background-color: #f7ecde;
+  }
+
+
+
+
+.title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 1px dashed black;
+    bottom: 110%;
+}
+.title h2 , .yellow{
+    color: #B3AC4A;
+}
+.grean{
+    color: #2ac054;
+    
+}
+.bttn::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px dashed black;
+  top: 90%;
+}
+

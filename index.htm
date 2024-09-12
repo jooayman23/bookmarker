@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section id="home">
+    <div class="container">
+        <div class="text-center py-5 ">
+            <h1 class="display-4">Bookmarker</h1>
+            
+          </div>
+          
+          <div class="title d-flex justify-content-center position-relative pt-4">
+            <span class="grean fs-3"><i class="fa-solid fa-bookmark "></i></span>
+            <h2 class="px-3"><span class="grean">Bookmark your</span> favorite sites
+            </h2>
+            <span class="yellow fs-3"><i class="fa-solid fa-bookmark "></i></span>
+          </div>
+          <div class="contact pt-3">
+            <div class="first-input">
+              <label  class="pb-3 fw-bold">
+                <span class="pe-1"><i class="fa-solid fa-book-bookmark"></i></span>
+                Site Name
+              </label>
+              <input oninput="allValidation( this , 'msgName' )" id="sitname" type="text" class="form-control" placeholder="Bookmark Name">
+              <p id="msgName" class=" d-none alert alert-danger p-2">website name is not valid!</p>
+            </div>
+            <div class="first-input">
+              <label  class="py-3 fw-bold">
+                <span class="pe-1"><i class="fa-solid fa-link"></i></span>
+                Site URL
+              </label>
+              <input oninput="allValidation( this , 'msgURL' )" id="siteurl" type="text" class=" form-control" placeholder="Website URL">
+              <p id="msgURL" class=" d-none alert alert-danger p-2">website Url is not valid!</p>
+            </div>
+            <div class="bttn d-flex justify-content-center py-5 position-relative">
+              <button onclick="addSite()" class="btn btn-danger px-5">Submit</button>
+            </div>
+          </div>
+          <table class="table text-center mt-3">
+            <thead>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="tableData">
+             
+            </tbody>
+          </table>
+    </div>
+</section>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/joo.js"></script>
+</body>
+</html>
